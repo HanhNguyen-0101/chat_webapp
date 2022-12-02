@@ -1,0 +1,97 @@
+<html lang="en">
+  <head>
+    <title>Chat Together</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" type="image/x-icon" href="images/light.png">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/room.css" />
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+  <body>
+    <div id="room" class="container-fluid">
+      <div class="fixed-nav">
+        <div class="fixed-nav-inner open-nav">
+          <ul class="text-center">
+            <a href="#" id="menu-toggle" class="waves-light menu-toggle" data-toggle="offcanvas">
+              <li>
+                <i class="material-icons menu-toggle-icon">menu</i></li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="d-inline-block float-right chat-content open-nav">
+        <div class="bootstrap snippets">
+          <div class="box box-warning direct-chat direct-chat-warning">
+            <div class="box-header with-border">
+              <h3 class="box-title"><span class="text-room">Room </span></h3>
+            </div>
+            <div class="box-body">
+              <!-- Conversations are loaded here -->
+              <div class="direct-chat-messages-container">
+                <div class="direct-chat-messages"></div>
+              </div>
+            </div>
+            <div class="box-footer" id="chat-form">
+              <form action="#" method="post">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    id="msg"
+                    name="message"
+                    placeholder="Type Message ..."
+                    class="form-control mr-1"
+                  />
+                  <span class="input-group-btn">
+                    <button
+                      type="submit"
+                      class="btn btn-warning btn-flat"
+                    >Send</button>
+                    <button
+                      type="button"
+                      id="get-position"
+                      class="btn btn-warning btn-flat"
+                    ><i class="material-icons">location_on</i></button>
+                  </span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/room.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.11.0/qs.min.js" integrity="sha512-/l6vieC+YxaZywUhmqs++8uF9DeMvJE61ua5g+UK0TuHZ4TkTgB1Gm1n0NiA86uEOM9JJ6JUwyR0hboKO0fCng==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </body>
+</html>
