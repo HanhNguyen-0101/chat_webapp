@@ -1,13 +1,18 @@
 {
-  "name": "chat-together",
+  "name": "chat_webapp",
   "version": "1.0.0",
   "description": "socket.io",
   "main": "index.js",
+  "author": {
+    "name": "Alice Nguyen",
+    "email": "hanhnguyen.learning@gmail.com"
+  },
+  "homepage": "https://HanhNguyen-0101.github.io/chat_webapp/",
   "scripts": {
     "start": "node app/server.js",
+    "build": "node app/server.js",
     "dev": "nodemon app/server.js"
   },
-  "author": "Hanh Nguyen",
   "license": "MIT",
   "dependencies": {
     "bad-words": "^3.0.4",
